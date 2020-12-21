@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>baitap2</title>
+</head>
+<body>
+<script>
+    function avg(arr) {
+        var sum = 0;
+        var avg = 0;
+        for (let i = 0; i < arr.length; i++) {
+            sum = sum + parseInt(arr[i]);
+            avg = sum / arr.length;
+        }
+        console.log(sum);
+        return avg;
+    }
+    let arr = [];
+    for (i=0;i < nhapvao.length;i++){
+        let nhapvao = prompt("nhap gia tri " + (i + 1));
+        arr.push(nhapvao);
+    }
+    console.log(arr)
+
+    alert(avg(arr));
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>baitap3</title>
+</head>
+<body>
+<script>
+    function findMax(Max) {
+        var max = arr[0];
+        for (i = 0; i < arr.length; i++) {
+            if (max<arr[i]){
+              max = arr[i];
+            }
+        }
+        return max;
+    }
+    function findMin(Min) {
+        var min = arr[0];
+        for (i = 0; i < arr.length; i++) {
+            if (min>arr[0]){
+                min = arr[i];
+            }
+        } return min;
+    }
+        let arr = [];
+        for (i = 0; i < 3; i++) {
+            let nhapso = parseInt(prompt("nhap gia tri" + (i + 1)));
+            arr.push(nhapso);
+               }
+        alert(findMax());
+        alert(findMin());
+</script>
+
+</body>
+</html>

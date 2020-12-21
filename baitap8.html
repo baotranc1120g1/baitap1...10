@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>baitap8</title>
+</head>
+<body>
+<script>
+    let arr = [1,2,3];
+    let xoa = prompt("xoa phan tu: ");
+    function xoapt() {
+        let a = false;
+        for (i = 0; i < arr.length; i++) {
+            if (xoa == arr[i]) {
+                arr.splice(i,1);
+                a = true;
+            }
+        } if (a == false) {
+            alert("khong co phan tu trong mang")
+        } else  {
+            alert("mang con lai:" + arr);
+        }
+    }
+
+xoapt();
+</script>
+
+</body>
+</html>
